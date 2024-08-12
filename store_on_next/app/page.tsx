@@ -1,17 +1,16 @@
 import Image from "next/image";
 
-export default function Home() {
+export default async function Home() {
+  const data = await await fetch("https://jsonplaceholder.typicode.com/todos");
+  const todo = await data.json();
   return (
-    <main className="flex align-center juctify-center">
+    <main className="flex align-center juctify-center gap-2">
       <h2>NEXT-APP</h2>
-      <Image
-        src="/vercel.svg"
-        alt="Vercel Logo"
-        className="dark:invert"
-        width={100}
-        height={24}
-        priority
-      />
+      <br />
+      <p>
+        TODOS:
+        {todo[1].title}
+      </p>
     </main>
   );
 }
