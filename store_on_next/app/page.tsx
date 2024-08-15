@@ -1,7 +1,5 @@
-import Image from "next/image";
-
 export default async function Home() {
-  const data = await await fetch("https://jsonplaceholder.typicode.com/todos");
+  const data = await fetch("https://jsonplaceholder.typicode.com/todos");
   const todo = await data.json();
   return (
     <main className="flex align-center juctify-center gap-2">
