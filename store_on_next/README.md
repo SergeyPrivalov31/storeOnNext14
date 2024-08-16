@@ -34,3 +34,22 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## How to create DB
+
+-You can install:
+"@neondatabase/serverless": "^0.9.4",
+"dotenv": "^16.4.5",
+"drizzle-orm": "^0.33.0",
+"pg": "^8.12.0",
+"drizzle-kit": "^0.24.0",
+
+-You need to add scripts:
+"db:generate": "drizzle-kit generate --config drizzle.config.ts",
+"db:push": "drizzle-kit push --config drizzle.config.ts"
+
+-You nedd to create migration config
+
+-generate and push
+
+-in other terminal run "npx drizzle-kit studio" to open the DB admin panel locally
