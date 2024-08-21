@@ -1,7 +1,10 @@
 export default async function Home() {
   return (
-    <main>
-      <h1>Home page</h1>
+    <main className="p-5 bg-blue-500 min-h-50vh text-special">
+      <h1>Hey</h1>
+      <h1>Hey</h1>
+      <h1>Hey</h1>
+      <h1>Hey</h1>
     </main>
   );
 }
