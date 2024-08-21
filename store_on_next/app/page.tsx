@@ -4,6 +4,7 @@
 import createPost from "@/server/actions/create-post";
 import getPosts from "@/server/actions/get-posts";
 import { cookies } from "next/headers";
+import PostButton from "./components/post-button";
 
 // export const dynamic = "force-dynamic"; //need to dynamic refresh, it also worked when you add coockies in function
 
@@ -29,17 +30,12 @@ export default async function Home() {
           ))}
           <form className="flex gap-3" action={createPost}>
             <input
-              className="bg-black p-5 rounded-lg text-white"
+              className="bg-black p-2 rounded-md text-white"
               name="title"
               type="text"
               placeholder="Title"
             />
-            <button
-              className="bg-black text-white p-5 rounded-lg"
-              type="submit"
-            >
-              Submit
-            </button>
+            <PostButton />
           </form>
         </div>
       </main>
