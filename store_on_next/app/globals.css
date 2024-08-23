@@ -25,3 +25,16 @@ body {
     text-wrap: balance;
   }
 }
+@layer base {
+  h1 {
+    @apply text-red-600
+  }
+  p {
+    @apply text-black
+  }
+}
+@layer components {
+  h1 {
+    @apply text-white
+  }
+}

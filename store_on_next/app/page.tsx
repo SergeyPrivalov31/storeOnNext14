@@ -5,6 +5,7 @@ export default async function Home() {
       <h1>Hey</h1>
       <h1>Hey</h1>
       <h1>Hey</h1>
+      <p>HEY</p>
     </main>
   );
 }
