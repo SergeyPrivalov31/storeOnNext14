@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+
 export default async function Home() {
   return (
     <main className="p-5 bg-blue-500 min-h-50vh text-special">
@@ -6,6 +8,7 @@ export default async function Home() {
       <h1>Hey</h1>
       <h1>Hey</h1>
       <p>HEY</p>
+      <Button variant={"ghost"}>Click Me</Button>
     </main>
   );
 }

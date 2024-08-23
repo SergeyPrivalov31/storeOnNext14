@@ -53,3 +53,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 -generate and push
 
 -in other terminal run "npx drizzle-kit studio" to open the DB admin panel locally
+
+## How to add shadcn and add components
+
+https://ui.shadcn.com/docs/installation/next
+
+npx shadcn-ui@latest init
+npx shadcn-ui@latest add button
