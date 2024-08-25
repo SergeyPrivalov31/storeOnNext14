@@ -60,3 +60,12 @@ https://ui.shadcn.com/docs/installation/next
 
 npx shadcn-ui@latest init
 npx shadcn-ui@latest add button
+
+## How to setUp nextAuth Google and Git hub signin
+
+github - need to create credansials in developer settings (keys for .env)
+google - need create cloud accont, create project, create keys
+
+- paste this keys in .env
+- create auth-secret ( npx auth secret) and paste this to auth config as secret
+- to create first user need to add schema for users by npm run db:generate and db:push / after that run localhost/api/auth/signin and thats it
