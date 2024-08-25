@@ -2,7 +2,7 @@
 
 import { Session } from "next-auth";
 import { signOut } from "next-auth/react";
-import { Button } from "../button";
+import { Button } from "@/components/ui/button";
 
 export default function UserButton({ user }: Session) {
   return (
