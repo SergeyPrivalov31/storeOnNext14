@@ -11,7 +11,7 @@ export const LoginForm = () => {
       cardDescription="auth page"
       showSocials
     >
-      <div>hey!</div>
+      <p></p>
     </AuthCard>
   );
 };

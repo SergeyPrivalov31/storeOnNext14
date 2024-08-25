@@ -9,9 +9,9 @@ export default async function Nav() {
   const session = await auth();
 
   return (
-    <header className="bg-slate-400 py-4 ">
+    <header className="py-8">
       <nav>
-        <ul className="flex justify-between px-2">
+        <ul className="flex justify-between ">
           <li>
             <Logo />
           </li>
