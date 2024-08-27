@@ -11,7 +11,7 @@ export const BackButton = ({
   label: string;
 }) => {
   return (
-    <Button className="font-medium w-full">
+    <Button variant={"link"} asChild className="flex m-auto">
       <Link area-label={label} href={href}>
         {label}
       </Link>
