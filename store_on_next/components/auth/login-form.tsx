@@ -18,6 +18,10 @@ import * as z from "zod";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 import Link from "next/link";
+//manually import
+import { useAction } from "next-safe-action/hooks";
+import { emailSignIn } from "@/server/actions/email-signin";
+import { cn } from "@/lib/utils";
 
 export const LoginForm = () => {
   const form = useForm({
@@ -28,9 +32,10 @@ export const LoginForm = () => {
       password: "",
     },
   });
+  const { execute, status } = useAction(emailSignIn);
   //get type from z labrary
   const onSubmit = (values: z.infer<typeof LoginSchema>) => {
-    console.log(values);
+    execute(values);
   };
   return (
     <AuthCard
@@ -85,7 +90,13 @@ export const LoginForm = () => {
               <Link href={"/auth/reset"}>Forgot password</Link>
             </Button>
           </div>
-          <Button className="w-full my-2" type="submit">
+          <Button
+            className={cn(
+              "w-full my-2",
+              status === "executing" ? "animate-pulse" : ""
+            )}
+            type="submit"
+          >
             {"Login"}
           </Button>
         </form>
