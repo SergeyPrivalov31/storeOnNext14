@@ -15,6 +15,27 @@
       "when": 1724760909701,
       "tag": "0001_stale_luckman",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1725008241105,
+      "tag": "0002_harsh_reaper",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1725008401396,
+      "tag": "0003_white_manta",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1725008437635,
+      "tag": "0004_talented_namorita",
+      "breakpoints": true
     }
   ]
 }
